@@ -31,7 +31,7 @@ connectToMongo();
 // configure the server's port
 
 app.get("/", (req: Request, res: Response): void => {
-  res.send("im you server");
+  res.send("im you server ");
 });
 
 app.use("/images/", express.static(path.join(__dirname, "../uploads")));
